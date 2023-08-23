@@ -1,4 +1,5 @@
 const inquirer = require("inquirer");
+const fs = require('fs');
 const { Circle, Triangle, Square, SVG } = require("./lib/shapes.js");
 
 inquirer
@@ -33,17 +34,30 @@ inquirer
     },
   ])
   .then((response) => {
-    console.log(response)
+    console.log(response);
+    svgBuilder(response);
 
+    
+  });
+  
+  function svgBuilder(response) {
+    let svgEl = `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200"></svg>`;
     // switch case of if/then to determine shape
+    switch(shape) {
+      case "Circle":
+
+      case "Square":
+
+      case "Triangle":
+  
+    }
     // once shape determined, create class of shape
       // ex let shape = new Circle();
       //shape.setColor(response.shapeColor)
-
+  
       //create SVG class
       // use all SVG methods (render being last)
-
-
-
-
-  });
+  
+      //write constructed svg string to example file
+    
+  }
