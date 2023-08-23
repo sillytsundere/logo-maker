@@ -1,4 +1,5 @@
 const inquirer = require("inquirer");
+const { Circle, Triangle, Square, SVG } = require("./lib/shapes.js");
 
 inquirer
   .prompt([
@@ -12,7 +13,7 @@ inquirer
     //is it possible to do an if statement for if they enter more than three characters-not letting the prompt proceed?
     //validate
     {
-      name: "text color",
+      name: "textColor",
       type: "input",
       message:
         "Please type in a color keyword or a hexadecimal code for the color of your text.",
@@ -25,10 +26,24 @@ inquirer
       choices: ["Circle", "Square", "Triangle"],
     },
     {
-      name: "shape color",
+      name: "shapeColor",
       type: "input",
       message:
         "Please type in a color keyword or a hexadecimal code for the background color of your chosen shape.",
     },
   ])
-  .then((response) => console.log(response));
+  .then((response) => {
+    console.log(response)
+
+    // switch case of if/then to determine shape
+    // once shape determined, create class of shape
+      // ex let shape = new Circle();
+      //shape.setColor(response.shapeColor)
+
+      //create SVG class
+      // use all SVG methods (render being last)
+
+
+
+
+  });
