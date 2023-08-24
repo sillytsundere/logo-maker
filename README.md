@@ -22,6 +22,8 @@ Below is an image of the console message once the user has answered all the prom
 
 ![the console message displayed once all the prompts have been entered and image is generated, 'Generated logo.svg!'](./images/logo-maker-done.png)
 
+A video demonstrating the process of running the application cen be viewed at this link: [Example Demonstration](https://drive.google.com/file/d/1P1NTsNFbn5xho3q1t0eBlaPtsjhaVzNy/view?usp=sharing)
+
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -37,6 +39,8 @@ Below is an image of the console message once the user has answered all the prom
 ![Static Badge](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white)
 
 ![Static Badge](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+
+Badges sourced from: [Awesome Badges](https://dev.to/envoy_/150-badges-for-github-pnk)
 
 ## Questions
 
