@@ -1,4 +1,4 @@
-# <Your-Project-Title>
+# Quick Logo Maker 
 
 ## Description
 
@@ -12,15 +12,19 @@ To use this applcation, clone the project directories and files from [the reposi
 
 ## Usage
 
+![an example logo generated from this application](./images/logoMaker-exampleImg.png)
+
 Navigate to the directory of the index.js file, if the index.js file is open in a code edior like VSCode then open the directory in an integrated terminal. Then from the command line initiate the program with 'node index.js' and answer the prompts to input text for your logo as well as select a shape from the three choices(circle, triangle, square) and input the colors you would like the text and background shape to be.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![some of the prompts asked for determine values of logo](./images/logo-maker-prompts.png)
+
+Below is an image of the console message once the user has answered all the prompts and the logo has been generated.
+
+![the console message displayed once all the prompts have been entered and image is generated, 'Generated logo.svg!'](./images/logo-maker-done.png)
 
 ## License
 
-MIT License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Badges
 
