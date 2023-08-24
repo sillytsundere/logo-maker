@@ -34,21 +34,20 @@ inquirer
     },
   ])
   .then((response) => {
-    console.log(response);
-    console.log(response.shape);
     console.log(svgBuilder(response), 'svgBuilder call');
     //do i need fs.writeFile here? write to an .svg file?
+    svgBuilder(response);
+    fs.writeFileSync('./example-logos/user-example.svg', svgBuilder({...response}));
     
   });
   
   function svgBuilder(response) {
-    // let svgEl = `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200"></svg>`;
-    // switch case of if/then to determine shape
+
     let shape;
 
     switch(response.shape) {
       case "Circle":
-        shape = new Circle(); //will the render method form the class in shapes.js be in there?
+        shape = new Circle(); 
         shape.setColor(response.shapeColor);
         shape.render();
         break;
@@ -63,7 +62,7 @@ inquirer
         shape.render();
         break;
     }
-    console.log(response, 'response,', shape, 'shape,', shape.color, 'shape color');
+    // console.log(response, 'response,', shape, 'shape,', shape.color, 'shape color');
    
     // once shape determined, create class of shape
       // ex let shape = new Circle();
@@ -72,12 +71,17 @@ inquirer
       //create SVG class
     let svg = new SVG();
       // use all SVG methods (render being last)
-      svg.setText(response.text, response.textColor);
+      if (response.shape === "Triangle") {
+        svg.setText(response.text, response.textColor, true);
+      } else {
+        svg.setText(response.text, response.textColor, false);
+      }
 
       svg.setShape(shape);
 
-      svg.render();
-  
+      let svgString = svg.render();
+      
       //write constructed svg string to example file
+      return svgString;
     
   }
