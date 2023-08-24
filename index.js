@@ -37,8 +37,8 @@ inquirer
     console.log(svgBuilder(response), 'svgBuilder call');
     //do i need fs.writeFile here? write to an .svg file?
     svgBuilder(response);
-    fs.writeFileSync('./example-logos/user-example.svg', svgBuilder({...response}));
-    
+    fs.writeFileSync('./example-logos/logo.svg', svgBuilder({...response}));
+    console.log('Generated logo.svg!')
   });
   
   function svgBuilder(response) {
