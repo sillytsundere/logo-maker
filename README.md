@@ -1,4 +1,4 @@
-# Quick Logo Maker 
+# Quick Logo Maker
 
 ## Description
 
@@ -39,8 +39,6 @@ A video demonstrating the process of running the application cen be viewed at th
 ![Static Badge](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white)
 
 ![Static Badge](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
-
-Badges sourced from: [Awesome Badges](https://dev.to/envoy_/150-badges-for-github-pnk)
 
 ## Questions
 
