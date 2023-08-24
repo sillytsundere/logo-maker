@@ -17,7 +17,7 @@ inquirer
       name: "textColor",
       type: "input",
       message:
-        "Please type in a color keyword or a hexadecimal code for the color of your text.",
+        "Please type in a color keyword(ex. green, blue, red, etc.) or a hexadecimal code for the color of your text.",
     },
     {
       name: "shape",
@@ -30,7 +30,7 @@ inquirer
       name: "shapeColor",
       type: "input",
       message:
-        "Please type in a color keyword or a hexadecimal code for the background color of your chosen shape.",
+        "Please type in a color keyword(ex. green, blue, red, etc.) or a hexadecimal code for the background color of your chosen shape.",
     },
   ])
   .then((response) => {
